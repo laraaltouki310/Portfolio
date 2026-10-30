@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(10, 10, 29);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 30px;
+    height: 10vh;
+    width: 100vw;
+    z-index: 1000;
+    padding-bottom: 5px;
+    background-color: rgb(10, 10, 29);
+    border-bottom: 1px solid rgba(92, 92, 92, 0.501);
+}
+
+nav h1{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 50%;
+}
+
+nav a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,:focus{
+    color: rgb(75, 10, 84);
+    text-decoration: underline;
+}
+
+nav p{
+    color: white;
+    background-color: rgb(75, 10, 84);
+    border-radius: 40px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid white;
+    margin-left: 45px;
+}
+
+.Container-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 90vh;
+}
+
+.logo-img img{
+    width: 500px;
+    height: 250px;
+    border-radius: 150px;
+    border: 4px solid rgb(53, 8, 59);
+    box-shadow: 0 8px 32px 0 rgb(53, 8, 59); 
+}
+
+.text-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+
+.text-home h1{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.text-home h2{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.text-home h4{
+    color: white;
+    font-size: 18px;
+    text-align: end;
+    margin-top: 24px;
+    line-height: 1.8;
+}
+
+.Icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.Container-Education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 15vh;
+    margin: 40px auto;
+    width: 99vw;
+}
+
+.Container-Education h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.c-courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    width: 600px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.courses:hover {
+    transform: translateY(-4px);
+    border-color: rgb(75, 10, 84);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.courses div:first-child {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.courses h4 {
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+.courses h4 span {
+    color: rgb(75, 10, 84);
+}
+
+.courses h6 {
+    color: #9ca3af;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.course-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.course-img img {
+    width: 140px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid rgb(75, 10, 84);
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(75, 10, 84);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 85%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #fff;
+    font-size: 45px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: rgb(75, 10, 84);
+}
+
+.Container-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 10vh;
+    margin-top: 20px;
+}
+
+.Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.Skills div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid  rgb(46, 6, 51);
+}
+
+.Skills div i{
+    font-size: 40px;
+}
+
+.Skills div p{
+    color: white;
+    font-size: 20px;
+}
+
+.Container-skills h1{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.Container-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 17vh;
+    margin-top: 100px;
+}
+
+.Container-work h1{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.projects a img{
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgba(92, 92, 92, 0.501);
+    border-radius: 10px 10px 0px 0px;
+    transition: transform 0.2s;
+}
+
+.projects a img:hover{
+    transform: scale(1.02);
+}
+
+.cont-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 170px;
+    background-color: rgb(10, 10, 29);
+}
+
+.btn button{
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+    color: rgb(46, 6, 51);
+    background-color: white;
+    border: 1px solid rgb(46, 6, 51);
+}
+
+.btn button:hover{
+    background-color:rgb(53, 8, 59);
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: rgb(46, 6, 51);
+    border: 1px solid white;
+}
+
+.Container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(14, 14, 41);
+    margin-top: 100px;
+}
+
+.copyright{
+    color: white;
+    margin-right: 40px;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-left: 60%;
+}
+
+i {
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+@media (max-width:600px){
+    nav h1{
+        font-size: 17px;
+        margin-right: 1%;
+    }
+    nav a{
+        font-size: 12px;
+    }
+    nav p{
+        margin-left: 0;
+    }
+    .Container-home{
+        flex-direction: column;
+    }
+    .logo-img img{
+        width: 400px;
+        margin-top: 75%;
+    }
+    .text-home{
+        align-items: center;
+        margin-top: 20px;
+    }
+    .text-home h4{
+        text-align: center;
+    }
+    .Icon {
+        margin-left: 5%;
+    }
+    .Container-Education{
+        margin-top: 270px;
+    }
+    .c-courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        width: 350px;
+    }
+    .Container-skills{
+        margin-top: 30px;
+    }
+    .icon {
+        margin-left: 20%;
+    }
+}

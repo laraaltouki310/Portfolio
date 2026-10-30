@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Lara</h1>
+            <a href="#Container-home">Home</a>
+            <a href="#Container-Education">Education</a>
+            <a href="#Container-skills">Skills</a>
+            <a href="#Container-work">My Works</a>
+            <a href="#Container-contact">Contact</a>
+        <p>L</p>
+    </nav>
+
+    <section id="Container-home" class="Container-home">
+        <div class="logo-img">
+            <img src="assets/midia/logo.jpg" alt="">
+        </div>
+        <div class="text-home">
+            <h1>Lara Malek Altouki</h1>
+            <h2>Frontend Developer</h2>
+            <h4> مصممة ومطورة مواقع ويب أجمع بين الحس الفني والإبداع في التصميم وبين الحلول البرمجية . طالبة في المعهد <br>
+             يمنحني شغفي . (Full-Stack) التقاني للحاسوب، وأسعى دوماً لتطوير مهاراتي في تطوير الواجهات الأمامية والخلفية<br>
+             بالرسم رؤية بصريّة دقيقة تهتم بجماليات التفاصيل وتجربة المستخدم، بينما تتيح لي مهاراتي في التعلم السريع التكيف مع أحدث <br>
+             . التقنيات وبناء تطبيقات ويب كاملة ومتكاملة بفاعلية
+            </h4>
+            <div class="Icon">
+                <i class="fa-brands fa-bootstrap" style="color: rgb(93, 65, 175);"></i>
+                <i class="fa-brands fa-square-js" style="color: rgb(223, 186, 52);"></i>
+                <i class="fa-brands fa-css3-alt" style="color: rgb(50, 102, 199);"></i>
+                <i class="fa-brands fa-html5" style="color: rgb(203, 61, 0);"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="Container-Education" class="Container-Education">
+        <h1>Education And Certification </h1>
+    <div class="Container-Edu">
+        <div class="c-courses">
+            <div class="courses">
+                <div>
+                    <h4 class="svu">1- Student at the Syrian Virtual University <span>(SVU)</span></h4>
+                </div>
+            </div>
+            <div class="courses">
+                <div>
+                    <h4>2- C# Course</h4><br>
+                    <h6>From Syrian Computer Society Training Centers</h6>
+                </div>
+                <div class="course-img">
+                    <img onclick="openModal(this.src)" src="assets/midia/C-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="courses">
+                <div>
+                    <h4>3- ICDL Course</h4><br>
+                    <h6>From Unrwa</h6>
+                </div>
+                <div class="course-img">
+                    <img onclick="openModal(this.src)" src="assets/midia/C-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="courses">
+                <div>
+                    <h4>4- Frontend Course</h4><br>
+                    <h6>From Asia Training Center</h6>
+                </div>
+                <div class="course-img">
+                <img onclick="openModal(this.src)" src="assets/midia/C-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="imgExpanded">
+        </div>
+    </div>
+    </section>
+
+    <section id="Container-skills" class="Container-skills">
+        <h1> My Skills </h1>
+        <div class="Skills">
+            <div>
+                <img src="assets/midia/icons8-c-sharp-logo-64.png" alt="">
+                <p>Frontend C#</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database" style="color: rgb(12, 103, 175);"></i>
+                <p>Microsoft Sql Server</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-powerpoint" style="color: rgb(136, 0, 0);"></i>
+                <p>Microsoft PowerPoint</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-word" style="color: rgb(12, 103, 175);"></i>
+                <p>Microsoft Word</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-excel" style="color: rgb(42, 84, 24);"></i>
+                <p>Microsoft Excel</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5" style="color: rgb(203, 61, 0);"></i>
+                <p>Html</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt" style="color: rgb(50, 102, 199);"></i>
+                <p>Css</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js" style="color: rgb(223, 186, 52);"></i>
+                <p>Java Script</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap" style="color: rgb(93, 65, 175);"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-laravel" style="color: rgb(208, 41, 41);"></i>
+                <p>Laravel</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-github" style="color: rgb(246, 246, 248);"></i>
+                <p>Github</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Container-work" class="Container-work">
+        <div>
+        <h1>Some Of My Work</h1>
+        </div>
+        <div class="projects">
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test3" target="_blank">
+                <img src="assets/midia/p-3.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test3" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test4" target="_blank">
+                    <img src="assets/midia/p-4.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test4" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test5" target="_blank">
+                    <img src="assets/midia/p-5.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test5" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test6" target="_blank">
+                    <img src="assets/midia/p-6.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test6" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test7" target="_blank">
+                    <img src="assets/midia/p-7.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test7" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test8" target="_blank">
+                    <img src="assets/midia/p-8.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test8" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test9" target="_blank">
+                    <img src="assets/midia/p-9.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test9" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-JavaScript1" target="_blank">
+                    <img src="assets/midia/p-10.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-JavaScript1" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-Test10" target="_blank">
+                    <img src="assets/midia/p-11.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-Test10" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Front-End-JavaScript2" target="_blank">
+                    <img src="assets/midia/p-12.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Front-End-JavaScript2" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Login-C/login.html" target="_blank">
+                    <img src="assets/midia/p-14.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Login-C" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Hemla-Online-Store-/home.html" target="_blank">
+                    <img src="assets/midia/p-15.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Hemla-Online-Store-" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/Login/login.html" target="_blank">
+                    <img src="assets/midia/p-16.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/Login" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/LoveJewelry/LoveJewelry.html" target="_blank">
+                    <img src="assets/midia/p-18.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/LoveJewelry" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <div class="cont-img">
+                <a href="https://laraaltouki310.github.io/EX-3/home6.html" target="_blank">
+                    <img src="assets/midia/p-19.png" alt="">
+                <div class="btn">
+                    <a href="https://github.com/laraaltouki310/EX-3" target="_blank">
+                    <button> GitHub </button>
+                    </a>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="Container-contact" class="Container-contact">
+        <div class="copyright">
+            <p> © Lara Malek Altouki </p>
+        </div>
+        <div class="icon">
+            <a href="https://mail.google.com/mail/laraaltouki" target="_blank"><i class="fa-solid fa-envelope" style="color:rgb(132, 22, 22);"></i></a>
+            <a href="https://www.linkedin.com/in/lara-altouki-4a960b3a2" target="_blank"><i class="fa-brands fa-linkedin" style="color: rgba(73, 143, 240, 0.933);"></i></a>
+            <a href="https://github.com/laraaltouki310" target="_blank"><i class="fa-brands fa-github" style="color: rgb(251, 250, 251);"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
